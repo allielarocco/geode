@@ -28,7 +28,7 @@ def chdir(data, sampleclass, genes, gamma=1., sort=True, calculate_sig=False, nn
 	"""
 	
 	## check input
-	data.astype(float)
+	data.astype(map(float))
 	sampleclass = np.array(map(int, sampleclass))
 	# masks
 	m_non0 = sampleclass != 0
